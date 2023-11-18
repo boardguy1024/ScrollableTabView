@@ -32,4 +32,39 @@ extension View {
                 }
             }
     }
+    
+    
+    
+    @ViewBuilder
+    func tabMask(tabProgress: CGFloat) -> some View {
+        
+        // Viewが 2層になっていて、
+        // layer-0は grayで塗りつぶす
+        // layer-1は capcule部分に maskをかけて currentのように見せる
+        ZStack {
+            self
+                .foregroundStyle(.gray)
+            
+            self
+                .symbolVariant(/*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/) // symbolを fillにする ViewModifier
+                .mask {
+                    GeometryReader {
+                        // paddingが除外された 親のsize
+                        let size = $0.size
+                        let capsuleWidth = size.width / CGFloat(Tab.allCases.count)
+                        
+                        Capsule()
+                            .fill()
+                            .frame(width: capsuleWidth)
+                            .offset(x: tabProgress * capsuleWidth)
+                    }
+                }
+        }
+    }
 }
+
+#Preview {
+    Home()
+}
+
+

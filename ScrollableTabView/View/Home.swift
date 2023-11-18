@@ -77,6 +77,7 @@ struct Home: View {
                 }
             }
         }
+        .tabMask(tabProgress: self.tabProgress)
         .background(
             GeometryReader {
                 
