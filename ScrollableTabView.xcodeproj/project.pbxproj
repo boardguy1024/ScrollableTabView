@@ -11,6 +11,9 @@
 		40EBB5A32B0873680041B519 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBB5A22B0873680041B519 /* ContentView.swift */; };
 		40EBB5A52B0873690041B519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EBB5A42B0873690041B519 /* Assets.xcassets */; };
 		40EBB5A82B0873690041B519 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EBB5A72B0873690041B519 /* Preview Assets.xcassets */; };
+		40EBB5B12B0875020041B519 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBB5B02B0875020041B519 /* Tab.swift */; };
+		40EBB5B32B08759C0041B519 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBB5B22B08759C0041B519 /* Home.swift */; };
+		40EBB5B62B08A15C0041B519 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBB5B52B08A15C0041B519 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		40EBB5A22B0873680041B519 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40EBB5A42B0873690041B519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40EBB5A72B0873690041B519 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40EBB5B02B0875020041B519 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		40EBB5B22B08759C0041B519 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		40EBB5B52B08A15C0041B519 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		40EBB59F2B0873680041B519 /* ScrollableTabView */ = {
 			isa = PBXGroup;
 			children = (
+				40EBB5B42B08A14A0041B519 /* Helpers */,
+				40EBB5AF2B0874ED0041B519 /* Model */,
+				40EBB5AE2B0874E80041B519 /* View */,
 				40EBB5A02B0873680041B519 /* ScrollableTabViewApp.swift */,
 				40EBB5A22B0873680041B519 /* ContentView.swift */,
 				40EBB5A42B0873690041B519 /* Assets.xcassets */,
@@ -65,6 +74,30 @@
 				40EBB5A72B0873690041B519 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40EBB5AE2B0874E80041B519 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40EBB5B22B08759C0041B519 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40EBB5AF2B0874ED0041B519 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40EBB5B02B0875020041B519 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40EBB5B42B08A14A0041B519 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				40EBB5B52B08A15C0041B519 /* View+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EBB5B62B08A15C0041B519 /* View+Extensions.swift in Sources */,
+				40EBB5B12B0875020041B519 /* Tab.swift in Sources */,
 				40EBB5A32B0873680041B519 /* ContentView.swift in Sources */,
+				40EBB5B32B08759C0041B519 /* Home.swift in Sources */,
 				40EBB5A12B0873680041B519 /* ScrollableTabViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScrollableTabView/Preview Content\"";
+				DEVELOPMENT_TEAM = FRBYK4548E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScrollableTabView/Preview Content\"";
+				DEVELOPMENT_TEAM = FRBYK4548E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
